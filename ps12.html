@@ -1,0 +1,56 @@
+<!-- Anant Jaitha; ajaitha17@cmc.edu -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anant's Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="ps12.css">
+	<script type="text/javascript" src="ps12.js"></script>
+</head>
+<body>
+	<center><h1>Come here to play an adaptation of the Classic Tic Tac Toe</h1></center>
+	<h3>Rules:</h3>
+	<ol>
+		<li>Red Moves first</li>
+		<li>In each turn you can put your color on an empty(white) space</li>
+		<li><pre>A player wins by securing 3 squares in a row of his/her color. 
+It can be vertically, horizontally, ordiagonally</pre></li>
+		<!-- <li><pre>The game ends when either a player wins or all squares are 
+filled and no pattern can be found</pre></li> -->
+		<li><pre>No more than 6 squares can be marked at a time.
+So the seventh square to be marked opens up the earliest one that was marked.</pre></li>
+	</ol>
+
+	<center><table>
+		<thead><caption>Tic-Tac-Toe!</caption></thead>
+		<tbody>
+			<tr>
+				<td><img id="11" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+				<td><img id="12" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+				<td><img id="13" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+			</tr>
+			<tr>
+				<td><img id="21" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+				<td><img id="22" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+				<td><img id="23" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+			</tr>
+			<tr>
+				<td><img id="31" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+				<td><img id="32" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+				<td><img id="33" src="off_white.jpg" onclick = "change(this.id)"></img></td>
+			</tr>
+
+		</tbody>
+
+	</table></center>
+
+	<center><input type="button" value="Reset" onclick="reset()" height="10px"></input></center>
+
+	<center><p>Current Turn:</p></center>
+
+	<center><img id="current" src="Red.jpg" border="2px solid black" padding="5px"></img></center>
+
+
+</body>
+
+</html>
